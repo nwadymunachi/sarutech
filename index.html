@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US" class="ui-mobile">
+<head>
+<!--if there's a multiple styling like using both <internal> and external the <style>comes before the <link> then the properties on the link will affect the webpage if not the reverse-->
+<meta charset="UTF-8"/>
+<title>Sarutech App</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<!--[if lt IE9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="android.css"/>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="android.js"></script>
+
+<style>
+body{
+	background-color: #808080;/*background color*/
+	color:#222;			   /*color*/
+	font-family:Helvetica;/*the helvetica will only have effect on devices other than adroid, while the driod san,driod Sans Mono and driod serif is specifically for adriod*/
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+#header h1 {
+color: #222;
+font-size: 20px;
+font-weight: bold;
+margin: 0 auto;
+padding: 0 0;
+text-align: center;
+text-shadow: 0px 1px 1px #fff;
+}
+
+#header h1 a {
+background-color: #red;
+border-bottom: 1px solid #666;
+color: #222;
+display: block;
+font-size: 20px;
+font-weight: bold;
+padding: 10px 0;
+text-align: center;
+text-decoration: none;
+text-shadow:0px 1px 1px #fff;/*the paramenters from left to right are the horizontal offset, vertical offset, blur and color*/
+background-image:-webkit-gradient(linear,left top, left bottom, from(#ccc), to(#999));
+/*the -webkit-gradient is used to instruct the browser to generate a gradient image on the fly
+	it normally be specified a url(). the gradient type can be linearor radial,*/
+}	
+
+#header ul {
+list-style: none;
+margin: 10px;
+padding: 0;
+}
+#header ul li a {
+background-color: #FFFFFF;
+border: 1px solid #999999;
+color: #222222;
+display:block;
+font-size:17px;
+font-weight:bold;
+margin-bottom:-1px;
+padding:12px 10px;
+text-decoration:none;
+
+}
+
+aside{padding:10px;}
+
+section{padding:10px;}
+/*the footer was removed from the page cos this app is bulit for an adroid. but to use it for a desktop you simply change the display:block;*/
+
+footer{padding:10px;
+display:none;}
+
+#header,ul,li:first-child a{
+-webkit-border-top-left-radius:8px;
+-webkit-border-top-right-radius:8px;
+}
+
+#header,ul,li:last-child a{
+-webkit-border-bottom-left-radius:8px;
+-webkit-border-bottom-right-radius:8px;
+}
+
+#header ul.hide {
+display: none;
+}
+
+
+#header,.leftButton {
+position: absolute;
+top: 7px;
+left: 6px;
+height: 30px;
+font-weight: bold;
+text-align: center;
+color: white;
+text-shadow: rgba (0,0,0,0.6) 0px -1px 1px;
+line-height: 28px;
+border-width: 0 8px 0 8px;
+background-color:blue;
+-webkit-border-bottom-left-radius:8px;
+-webkit-border-bottom-right-radius:8px;
+	}
+</style>
+
+</head>
+
+<body>
+<div id="header">
+	<h1><a href="./">SARUTECH</a></h1>
+	
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="software.html">Product/Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	
+	
+	<nav id ="main">
+		<ul>
+			<li><a href="what.html">What We do </a></li>
+			<li><a href="animation.html">Animation</a></li>
+			<li><a href="development.html">Web Design & Development</a></li>
+			<li><a href="http://www.marketnaija.com">Marketnaija</a></li>
+			
+		</ul>
+	</nav>
+
+<div class="leftButton" onclick="toggleMenu()">Menu</div>
+
+<section>
+	<h2>About</h2>
+	<p> SARU TECH is an IT Company based in Benin City, Nigeria. We design Websites, Software Solutions. Mobile Applications and Multimedia for people, businesses and organizations<br/><a href="read.html">readmore</a> </p>
+</section>
+
+
+<aside>
+	
+	<p></p>
+</aside>
+
+<footer>
+	<ul>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="blog.html">Blog</a></li>
+</ul>
+<p class="subtle">Copyright&copy 2016 SARUECH. All rights reserved</p>
+</footer>
+
+</body>
+
+</html>

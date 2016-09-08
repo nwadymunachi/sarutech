@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+   xmlns:gap = "http://phonegap.com/ns/1.0"
+   id        = "sarutech"
+   version    = "1.0.0">
+	
+	<name>SARU TECH</name>
+
+    <description>
+        SARU TECH is an IT Company based in Benin City Nigeria. We design Websites, Software Solutions, Mobile Applications and Multimedia for people, businesses and Organizations.
+    </description>
+
+    <author email="contactsarutech@gmail.com">
+        Munachi Promise
+    </author>
+	
+   <icon src="icon.png" />
+</widget>
